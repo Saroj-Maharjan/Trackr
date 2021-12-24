@@ -78,7 +78,7 @@ dependencies {
     implementation "com.google.accompanist:accompanist-flowlayout:$accompanist_version"
 
     implementation "com.google.dagger:hilt-android:$hilt_version"
-    implementation 'androidx.hilt:hilt-navigation-compose:1.0.0-rc1'
+    implementation 'androidx.hilt:hilt-navigation-compose:1.0.0-rc01'
     kapt "androidx.hilt:hilt-compiler:$hilt_compiler_version"
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
 
