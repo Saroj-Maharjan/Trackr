@@ -24,6 +24,8 @@ jobs:
         run: .github/scripts/gradlew_recursive.sh assembleDebug
       - name: Test project
         run: .github/scripts/gradlew_recursive.sh testDebug
+      - name: Static Analysis
+        run: ./gradlew ktlintCheck detekt dependencyUpdates
       - name: Zip artifacts
         run: zip -r assemble.zip . -i '**/build/*.apk' '**/build/*.aab' '**/build/*.aar' '**/build/*.so'
       - name: Upload artifacts
